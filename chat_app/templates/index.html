@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Chat App</h1>
+    <div id="user-status"></div>
+    <div id="chat">
+        <div id="messages"></div>
+    </div>
+    <div>
+        <select id="room-select">
+            {% for room in rooms %}
+            <option value="{{ room }}">{{ room }}</option>
+            {% endfor %}
+        </select>
+        <input type="text" id="message" placeholder="Type a message">
+        <button id="send">Send</button>
+    </div>
+    <button id="logout">Logout</button>
+    <script src="/static/script.js"></script>
+</body>
+</html>

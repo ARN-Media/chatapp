@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#chat {
+    height: 400px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+}
+#messages {
+    padding: 10px;
+}
+#message {
+    width: 80%;
+}
+#send {
+    width: 15%;
+}
+#logout {
+    margin-top: 10px;
+}

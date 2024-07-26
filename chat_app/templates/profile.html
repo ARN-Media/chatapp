@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <form action="/profile" method="post" enctype="multipart/form-data">
+        <label for="profilePic">Profile Picture:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+    <p>Username: {{ username }}</p>
+    <a href="/">Back to Chat</a>
+</body>
+</html>
